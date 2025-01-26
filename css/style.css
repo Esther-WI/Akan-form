@@ -73,3 +73,20 @@ form .input-box input {
     align-items: center;
     column-gap: 50px;
 }
+.form .gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+
+}

@@ -56,7 +56,7 @@ function showResult(message) {
   const akanNameElement = document.getElementById("akan-name");
   akanNameElement.textContent = message; 
   const result = document.getElementById("result");
-  result.style.display = "block";
+  result.style.display = "block"; // Ensure the result div is visible
 }
 
 const form = document.getElementById("akan-form");

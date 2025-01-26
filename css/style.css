@@ -61,3 +61,15 @@ form .input-box input {
    border-radius: 6px;
     padding: 0 15px;
 }
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+
+}
+
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}

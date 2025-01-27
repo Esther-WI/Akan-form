@@ -73,6 +73,7 @@ form .input-box input {
     align-items: center;
     column-gap: 50px;
 }
+
 .form .gender{
     column-gap: 5px;
     cursor: pointer;

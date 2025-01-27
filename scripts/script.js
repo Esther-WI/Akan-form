@@ -43,12 +43,10 @@ function calculateAkanName(event) {
 
   showResult("Your Akan name is " + akanName);
 }
-
 function showResult(message) {
   const result = document.getElementById("result");
   result.textContent = message;
   result.style.display = "block";
 }
-
 const form = document.getElementById("akan-form");
 form.addEventListener("submit", calculateAkanName);

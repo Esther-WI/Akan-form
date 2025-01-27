@@ -26,23 +26,19 @@ function calculateAkanName(event) {
     return;
   }
   if (YY <= 1900 || YY > 2025) {
-    alert("Invalid century");
+    alert("Invalid year");
     return;
   }
 
-  CC = Math.floor(YY / 100);
+  const CC = Math.floor(YY / 100);
   YY = YY % 100;
 
-  //confirm formular
   const day = Math.floor(
     (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7
   );
 
-  //console.log(day);
-  //confirm formular
-  const index = ((day + 1) % 7) - 1;
+  const index = (day + 7) % 7; // Ensure non-negative index
 
-  //diff from HAfsa's
   const akanName = gender === "male" ? maleNames[index] : femaleNames[index];
 
   showResult("Your Akan name is " + akanName);
